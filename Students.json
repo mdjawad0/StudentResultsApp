@@ -1,6 +1,6 @@
 [
   {
-    "regno": 1,
+    "regno": 101,
     "name": "Mohammed Jawad Pasha",
     "english": 80,
     "hindi": 67,
@@ -10,7 +10,7 @@
     "computerscience": 87
   },
   {
-    "regno": 2,
+    "regno": 102,
     "name": "Mohammed Junaid Pasha",
     "english": 75,
     "hindi": 87,
@@ -20,7 +20,7 @@
     "computerscience": 67
   },
   {
-    "regno": 3,
+    "regno": 103,
     "name": "Mike Tyson",
     "english": 91,
     "hindi": 37,
@@ -30,7 +30,7 @@
     "computerscience": 57
   },
   {
-    "regno": 4,
+    "regno": 104,
     "name": "Fionna Flynn",
     "english": 86,
     "hindi": 35,
@@ -40,7 +40,7 @@
     "computerscience": 47
   },
   {
-    "regno": 5,
+    "regno": 105,
     "name": "Andrew James",
     "english": 95,
     "hindi": 70,
@@ -49,4 +49,14 @@
     "maths": 94,
     "computerscience": 100
   },
+  {
+    "regno": 106,
+    "name": "Jimmy Nisham",
+    "english": 80,
+    "hindi": 65,
+    "physics": 82,
+    "chemistry": 86,
+    "maths": 77,
+    "computerscience": 57
+  }
 ]
