@@ -1,15 +1,10 @@
 <html>
 <head>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <style>
-    .container {
-      width: 85% !important;
-    }
-  </style>
 </head>
 <body>
   <h1 class="text-center mt-4">EXAMINATION RESULT</h1>
-  <div class="container mt-4">
+  <div class="container mt-4" style="width: 55% !important">
     <form class="form-control p-4" onsubmit="showResults(event)">
       <label for="regno">Student ID:</label>
       <input required class="form-control mt-2" type="number" name="regno" id="regno" placeholder="Enter your USN Number">
@@ -20,7 +15,7 @@
     </form>
   </div>
   <!-- Section where student results will be display-->
-  <div class="container" id="results">
+  <div class="container" style="width: 35% !important" id="results">
   </div>
 </div>
 </body>
@@ -38,7 +33,7 @@ return data.find(student => student.regno === id);
 // Function which will be called once the form is submitted
 function showResults(event) {
 event.preventDefault()
-let regno = document.getElementById('regno').value;
+const regno = document.getElementById('regno').value;
 if (isNaN(regno)) {
 alert("Please enter a valid number")
 } else {
@@ -48,13 +43,13 @@ const formData = new FormData(form);
 const search = new URLSearchParams(formData);
 const queryString = search.toString();
 const userinput = Number(queryString.replace('regno=', ''));
-//console.log(userinput)
+console.log(userinput)
 // Calling defined function to fetch Students object by Passing Students ID
 getStudentById(userinput)
 .then(student => {
 if (userinput === student.regno) {
 // On successfully retrieving student details manipulate the same on the HTML DOM
-document.getElementById("results").innerHTML = `      <div class="table-bordered mt-4">
+document.getElementById("results").innerHTML = `<div class="table-bordered mt-4">
 <table class="table">
 <tr>
 <th class="table-info">Student ID:</th>
@@ -89,7 +84,7 @@ document.getElementById("results").innerHTML = `      <div class="table-bordered
 </tr>
 </table>
 </div>
-<div class="container-fluid text-center mt-4">
+<div class="container-fluid text-center mt-4 mb-4">
 <h3 class="text-danger mb-2">Total marks: <span>${student.english+student.hindi+student.physics+student.chemistry+student.maths+student.computerscience} off 600</span></h3><h3 class="text-success"> Percentage: <span>${
 ((student.english+student.hindi+student.physics+student.chemistry+student.maths+student.computerscience)/6).toFixed(2)+ "%"}</span></h3>
 <a href="#" onclick="location.reload()">Next result</a></div>`;
