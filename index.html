@@ -21,14 +21,16 @@
   </style>
 </head>
 <body>
-  <h3 class="text-center mt-4">EXAMINATION RESULT</h3>
+  <h3 class="text-center mt-4">Examination Result Portal</h3>
   <div class="container mt-4">
     <form onsubmit="showResults(event)">
       <label for="regno" class="form-label">Student ID:</label>
       <input required class="form-control mb-3" type="number" name="regno" id="regno" placeholder="Enter your USN Number">
       <button type="submit" class="btn btn-primary center">Submit</button>
     </form>
-    <div class="container mt-4" id="results"></div>
+    <div class="container mt-4" id="results">
+      <p id="note" class="text-center text-success mt-5">Note: Enter USN between 101 to 106 for dummy results</p>
+    </div>
   </div>
   <script src="Main.js"></script>
 </body>
