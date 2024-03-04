@@ -67,6 +67,8 @@ function displayStudentInfo(student) {
 
 function showResults(event) {
     event.preventDefault();
+     // Hide note
+  document.getElementById("note").classList.add("d-none");
     const regno = document.getElementById('regno').value;
     const userinput = Number(regno);
 
