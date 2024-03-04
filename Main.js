@@ -67,5 +67,5 @@ function showResults(event) {
                 document.getElementById("results").innerHTML = `<p class=" text-center text-danger mt-5"> No student found with ID: ${userinput}<p>`;
                 console.error(error);
             });
-    }, 3000); // 3 seconds delay
+    }, 2000); // 2 seconds delay
 }
