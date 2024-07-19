@@ -1,5 +1,5 @@
 function getStudentById(id) {
-    return fetch('https://mocki.io/v1/7b9f5d1f-5c76-4745-b967-689051d1dd1d')
+    return fetch(Students.json)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
