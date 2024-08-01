@@ -58,5 +58,15 @@
     "chemistry": 86,
     "maths": 77,
     "computerscience": 57
+  },
+  {
+    "regno": 107,
+    "name": "Adnan Shariff",
+    "english": 98,
+    "hindi": 95,
+    "physics": 90,
+    "chemistry": 91,
+    "maths": 77,
+    "computerscience": 87
   }
 ]
